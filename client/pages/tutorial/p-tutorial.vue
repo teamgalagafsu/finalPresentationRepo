@@ -14,20 +14,15 @@
 					<tbody>
 						<tr>
 							<td id="tutorial1" align="center" width="25%" style="border: none;">
-								<!-- <a href="../p-comingsoon">
+								<a href="../p-comingsoon">
 									<img id="algebthinking" height="200px" width="200px" src="/images/leaf2.png" />
 									<h3>Coming Soon</h3>
-									
-								</a> -->
-								<a href="/tutorial/p-additionk">
-									<img id="algebthinking" height="200px" width="200px" src="/images/leaf2.png" />
-									<h3>Early Addition</h3>
 								</a>
 							</td>
 							<td align="center" width="25%" style="border: none;">
-								<a href="/tutorial/p-time2">
+								<a href="../p-comingsoon">
 									<img id="numoperbaseten" height="200px" width="200px" align="center" src="/images/leaf1.png" />
-									<h3>You Can Tell Time Too</h3>
+									<h3>Coming Soon</h3>
 								</a>
 							</td>
 							<td align="center" width="25%" style="border: none;">
@@ -65,7 +60,7 @@ export default {
 			return
 		} else {
 			updateUsername.innerHTML = this.$auth.user.email;
-			grade = this.$auth.user.grade;
+			grade = this.$auth.user.gradeLevel;
 		}
 
 		if(grade == 2) {
@@ -84,6 +79,11 @@ body{
 }
 
 a{
+	color: #2C8C67;
+	text-decoration: none;
+}
+
+h1{
 	color: #2C8C67;
 	text-decoration: none;
 }

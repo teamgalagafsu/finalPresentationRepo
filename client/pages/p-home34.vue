@@ -20,7 +20,7 @@
 						</a>
 					</div>
 					<div class = "box">
-						<a href="p-comingsoon">
+						<a href="http://peppermintgame.surge.sh/">
 							<img src="images/games.png" />
 							<h3>Games</h3>
 						</a>
@@ -37,12 +37,12 @@
 				</div>
 				<div id="row3">
 					<div id="row3col1">
-						<img class="progress" src="images/progressbar.png" />
-						<p>Numbers: 60%</p>
+						<img class="progress" id="numCorrectOA" src="images/progress0.png" />
+						<p id="numCorrectOAText">Algebraic Thinking: 0%</p>
 					</div>
 					<div id="row3col2">
-						<img class="progress" src="images/progressbar.png" />
-						<p>Algebra: 60%</p>
+						<img class="progress" id="numCorrectNBT" src="images/progress0.png" />
+						<p id="numCorrectNBTText">Numbers and Operations: 0%</p>
 					</div>
 				</div>
 			</div>
@@ -53,6 +53,14 @@
 <script>
 export default {
     mounted() {
+		/********************* Updating Username at top of Page ************/
+		//Replace this code with retrieving numCorrectOA from the database
+		var numCorrectOA = 4;
+		var numCorrectNBT = 7;
+
+		//Replace this code with retrieving how many rewards they have earned from the database
+		var reward = 20;
+
 		/********************* Updating Username at top of Page ************/
 		// store the DOM node with id="username" in a variable
 		var updateUsername = document.getElementById('usernamehere'); 
@@ -108,6 +116,101 @@ export default {
 				break;
 			default:
 				document.getElementById("candybowl").src='images/zerocandy.png';
+				break;
+		}
+
+		/********************* Updating Progress Bars ************/
+		switch(numCorrectOA) {
+			case 0:
+				document.getElementById("numCorrectOA").src='images/progress0.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 0%";
+				break;
+			case 1:
+				document.getElementById("numCorrectOA").src='images/progress10.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 10%";
+				break;
+			case 2:
+				document.getElementById("numCorrectOA").src='images/progress20.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 20%";
+				break;
+			case 3:
+				document.getElementById("numCorrectOA").src='images/progress30.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 30%";
+				break;
+			case 4:
+				document.getElementById("numCorrectOA").src='images/progress40.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 40%";
+				break;
+			case 5:
+				document.getElementById("numCorrectOA").src='images/progress50.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 50%";
+				break;
+			case 6:
+				document.getElementById("numCorrectOA").src='images/progress60.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 60%";
+				break;
+			case 7:
+				document.getElementById("numCorrectOA").src='images/progress70.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 70%";
+				break;
+			case 8:
+				document.getElementById("numCorrectOA").src='images/progress80.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 80%";
+				break;
+			case 9:
+				document.getElementById("numCorrectOA").src='images/progress90.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 90%";
+				break;
+			case 10:
+				document.getElementById("numCorrectOA").src='images/progress100.png';
+				document.getElementById('numCorrectOAText').innerHTML = "Algebraic Thinking: 100%";
+				break;
+		}
+
+		switch(numCorrectNBT) {
+			case 0:
+				document.getElementById("numCorrectNBT").src='images/progress0.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 0%";
+				break;
+			case 1:
+				document.getElementById("numCorrectNBT").src='images/progress10.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 10%";
+				break;
+			case 2:
+				document.getElementById("numCorrectNBT").src='images/progress20.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 20%";
+				break;
+			case 3:
+				document.getElementById("numCorrectNBT").src='images/progress30.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 30%";
+				break;
+			case 4:
+				document.getElementById("numCorrectNBT").src='images/progress40.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 40%";
+				break;
+			case 5:
+				document.getElementById("numCorrectNBT").src='images/progress50.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 50%";
+				break;	
+			case 6:
+				document.getElementById("numCorrectNBT").src='images/progress60.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 60%";
+				break;
+			case 7:
+				document.getElementById("numCorrectNBT").src='images/progress70.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 70%";
+				break;
+			case 8:
+				document.getElementById("numCorrectNBT").src='images/progress80.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 80%";
+				break;
+			case 9:
+				document.getElementById("numCorrectNBT").src='images/progress90.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 90%";
+				break;
+			case 10:
+				document.getElementById("numCorrectNBT").src='images/progress100.png';
+				document.getElementById('numCorrectNBTText').innerHTML = "Numbers and Operations: 100%";
 				break;
 		}
     }

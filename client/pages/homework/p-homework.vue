@@ -19,8 +19,8 @@
 									<h3>Operations and Algebraic Thinking</h3>
 								</a>
 								<br/><br/>
-								<img class="progress" src="/images/progressbar.png" />
-								<br/><br/>
+								<!-- <img class="progress" src="/images/progressbar.png" />
+								<br/><br/> -->
 								<!-- <h4>0 of 10 Complete</h4> -->
 							</td>
 							<td align="center" width="25%" style="border: none;">
@@ -29,8 +29,8 @@
 									<h3>Number and Operations - Base Ten</h3>
 								</a>
 								<br/><br/>
-								<img class="progress" src="/images/progressbar.png" />
-								<br/><br/>
+								<!-- <img class="progress" src="/images/progressbar.png" />
+								<br/><br/> -->
 								<!-- <h4>5 of 15 Complete</h4> -->
 							</td>
 							<td align="center" width="25%" style="border: none;">
@@ -39,8 +39,8 @@
 									<h3>Measurement and Data</h3>
 								</a>
 								<br/><br/>
-								<img class="progress" src="/images/progressbar.png" />
-								<br/><br/>
+								<!-- <img class="progress" src="/images/progressbar.png" />
+								<br/><br/> -->
 								<!-- <h4>7 of 10 Complete</h4> -->
 							</td>
 							<td align="center" width="25%" style="border: none;">
@@ -49,8 +49,8 @@
 									<h3>Geometry</h3>
 								</a>
 								<br/><br/>
-								<img class="progress" src="/images/progressbar.png" />
-								<br/><br/>
+								<!-- <img class="progress" src="/images/progressbar.png" />
+								<br/><br/> -->
 								<!-- <h4>2 of 20 Complete</h4> -->
 							</td>
 						</tr>
